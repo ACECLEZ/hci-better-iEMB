@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--#cc0000-->
+<html>
+<head>
+	<title>Login Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('https://iemb.hci.edu.sg/Images/iemb_bg.jpg?t=1.0');
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.white-box {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 5%;
+	padding: 2%;
+	box-shadow: 0px 0px 2% rgba(0,0,0,0.5);
+    width: 60%;
+    max-width: 600px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+    padding: 5% 5% 7.5% 7.5%;
+}
+
+.form-input {
+	padding: 2%;
+	font-size: 2.5vw;
+	border-radius: 5%;
+	border: 0.5vw solid #cc0000;
+	margin-bottom: 4%;
+}
+
+.form-btn {
+	background-color: #cc0000;
+	color: white;
+	padding: 2%;
+	border: none;
+	border-radius: 5%;
+	cursor: pointer;
+	font-size: 2.5vw;
+}
+
+.form-btn:hover {
+	background-color: darkred;
+}
+
+.red-footer {
+	background-color: #cc0000;
+	color: white;
+	text-align: center;
+	padding: 1%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+    </style>
+</head>
+<body>
+	<div class="login-container">
+		<div class="white-box">
+			<h2>Login</h2>
+			<form>
+				<input class="form-input" type="text" id="username" name="username" placeholder="Username">
+				<input class="form-input" type="password" id="password" name="password" placeholder="Password">
+				<button type="submit" class="form-btn">Login</button>
+			</form>
+		</div>
+	</div>
+	<footer class="red-footer">
+		<p>&copy; 2023 Login Page</p>
+	</footer>
+</body>
+</html>
